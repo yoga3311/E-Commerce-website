@@ -1,0 +1,30 @@
+body{
+	background: rgb(209,209,209);
+	font-family: "proxima-nova";
+}
+
+div{
+	box-sizing: border-box;
+}
+.content{
+	background: rgb(20,39,71);
+	border-radius: 4px;
+	box-shadow: 0 2px 6px rgba(0,0,0,.4);
+	height: 500px;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	width: 320px;
+}
+
+.header{
+	background: rgba(0,0,0,.3);
+	color: #BFDAD5;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 20px 0;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}

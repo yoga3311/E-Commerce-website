@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SIGN IN </title>
+    <style>
+        .pos{
+            font-weight: bold;
+            font-size: xx-large;
+            position: absolute;
+            top:100px;
+            left:650px;
+        }
+        .bc{
+            background-color: black;
+            padding: 30px;
+            
+            border-radius: 5px;
+            padding: 3px;
+            font-size:17px;
+          }
+          .bc a{
+            color: white;
+            text-decoration: none;
+          }
+          .bc a:hover{
+            color: rgb(236, 253, 1);
+          }
+          .container
+          {
+            box-sizing: border-box;
+            border:2px solid;
+            border-radius: 5px;
+            width:300px;
+            
+          }
+    </style>
+    
+    </head>
+    <body style="background-image:url('bg2.png'); background-repeat: no-repeat; background-size: cover;">
+        <div class="pos">
+<h2><center> LOGIN</center>
+</h2>
+ <div class="container">
+    <center>
+<i class="fa-solid fa-user fa-4x"></i> 
+
+<form name="form1"><br>
+<label for="username">EMAIL:</label><br>
+<input type="email" id="username" name="username" placeholder=" Enter E-mail" required/><br><br>
+<label for="pwd">Password:</label><br>
+<input type="password" placeholder="Enter Password" name="pwd" required/><br>
+<br></center>
+<center><a href="./everent.html"><button type="button" class="btn"  onclick="return validateform()">LOGIN</button></a></center>
+<br>
+</form>
+</center>
+<br><br>
+
+<script>
+    function validateform()
+    {
+        var uname = document.forms["form1"]["username"].value;
+        var pwd = document.forms["form1"]["pwd"].value;
+
+        if(uname=="")
+        {
+            alert("Please enter your e-mail id");
+            return false;
+        }
+        else if(pwd=="")
+        {
+            alert("Please enter the password");
+            return false;
+        }
+        else{
+            alert("Thank you for Login & You are welcome to EVERENT")
+        }
+    }
+</script>
+    </body>
+</html>
